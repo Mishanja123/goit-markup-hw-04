@@ -248,15 +248,17 @@ gap: var(--indent);
 }
 .about-list {
     --items: 4;
+    
 
 }
+
 .about-icon {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    background-color: var(--light-color);
     border-radius: 4px;
     padding: 24px 100px;
-    background-color: #F4F4FD;
 }
 
 
@@ -405,6 +407,12 @@ gap: var(--indent);
     padding: 100px 0;
 }
 
+.footer-wrapper {
+    display: flex;
+    gap: 120px;
+}
+
+
 
 /*Logo Footer*/
 .logo-light {
@@ -418,6 +426,12 @@ gap: var(--indent);
 }
 .socials-link-footer {
     background: rgba(255, 255, 255, 0.1);
+}
+.paragrapf-socials{
+    color: white;
+    font-weight: 500;
+    margin-bottom: 16px;
+    margin-top: 0;
 }
 
 .socials-link-footer:hover,
