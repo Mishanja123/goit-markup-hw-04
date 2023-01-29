@@ -112,6 +112,7 @@ gap: var(--indent);
     background-color: var(--white-color);
     border-bottom: 1px solid;
     border-color: #E7E9FC;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -259,6 +260,8 @@ gap: var(--indent);
     background-color: var(--light-color);
     border-radius: 4px;
     padding: 24px 100px;
+    width: 264px;
+    height: 112px;
 }
 
 
@@ -371,22 +374,24 @@ gap: var(--indent);
 
 
 /*Partfolio BOX*/
-.partfolio {
+.portfolio {
     padding-top: 96px;
     padding-bottom: 120px;
 }
-.partfolio-list {
+.portfolio-list {
     display: flex;
     flex-wrap: wrap;
     gap: var(--indent);
     row-gap: 48px;
 }
 
-.partfolio-item {
-    
+.portfolio-item:hover,
+.portfolio-item:focus {
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.partfolio-wrapper {
+
+.portfolio-wrapper {
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
