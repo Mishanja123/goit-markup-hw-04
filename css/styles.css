@@ -8,6 +8,7 @@
     --light-color:#F4F4FD;
     --white-color:#FFFFFF;
     --black-color:#000000;
+    --hover-link:#404BBF;
 
     /*Others*/
     --radius:;
@@ -101,6 +102,7 @@ gap: var(--indent);
     order: 1;
     color: var(--text-color);
     margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 
@@ -188,7 +190,14 @@ gap: var(--indent);
 
 .order{
     padding: 188px 0;
-    background: #2E2F42;
+    /* background: #2E2F42; */
+    background-image: linear-gradient(rgba(46, 47, 66, 0.3), rgba(46, 47, 66, 0.3)), url('/images/bg.images/people-office.jpg  ');
+    background-repeat: no-repeat;
+    background-size:: contain;
+    background-position: right;
+
+
+    
 }
 .order-box { 
     display: flex;
@@ -227,7 +236,7 @@ gap: var(--indent);
 .btn-hero:hover,
 .btn-hero:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    background-color: #404BBF;
+    background-color: var(--hover-link);
     color: var(white);
 }
 
@@ -241,7 +250,14 @@ gap: var(--indent);
     --items: 4;
 
 }
-
+.about-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 24px 100px;
+    background-color: #F4F4FD;
+}
 
 
 
@@ -270,6 +286,57 @@ gap: var(--indent);
         border-radius: 0px 0px 4px 4px;
 }
 
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.socials-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--brand-color);
+    border-radius: 50%;
+}
+.socials-icon {
+    fill: var(--light-color);
+}
+.socials-link:hover,
+.socials-link:focus {
+    background-color: var(--hover-link);
+}
+
+/*Customers*/
+.customers {
+    padding: 130px 0 120px;
+}
+
+.customers-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.customers-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 166px;
+    height: 88px;
+    border: 1px solid var(--subtle-text-color);
+    border-radius: 4px;
+    fill: var(--subtle-text-color);
+}
+
+.customers-link:hover,
+.customers-link:focus {
+    border: 1px solid var(--hover-link);
+    fill: var(--hover-link);
+
+}
 
 
 /*partfolio*/
@@ -295,7 +362,7 @@ gap: var(--indent);
 
 .btn-light:hover,
 .btn-light:focus {
-    background: #404BBF;
+    background: var(--hover-link);
     color: white;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -348,4 +415,12 @@ gap: var(--indent);
     max-width: 264px;
     padding-top: 16px;
     color: var(--accent-color);
+}
+.socials-link-footer {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.socials-link-footer:hover,
+.socials-link-footer:focus {
+    background: #31D0AA;
 }
