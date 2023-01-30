@@ -192,7 +192,7 @@ gap: var(--indent);
 .order{
     padding: 188px 0;
     /* background: #2E2F42; */
-    background-image: linear-gradient(rgba(46, 47, 66, 0.3), rgba(46, 47, 66, 0.3)), url('/images/bg.images/people-office.jpg');
+    background-image: linear-gradient(rgba(46, 47, 66, 0.3), rgba(46, 47, 66, 0.3)), url('../images/bg.images/people-office.jpg');
     background-repeat: no-repeat;
     background-size:: contain;
     background-position: right;
@@ -217,7 +217,6 @@ gap: var(--indent);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    flex-direction: row;
     align-items: flex-start;
     border-radius: 4px;
     border: none;
@@ -361,7 +360,9 @@ gap: var(--indent);
 .btn-light {
     background: #F4F4FD;
     color: var(--brand-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+    border: 1px solid #E7E9FC;
+        border-radius: 4px;
     padding: 12px 24px;
 }   
 
@@ -369,6 +370,7 @@ gap: var(--indent);
 .btn-light:focus {
     background: var(--hover-link);
     color: white;
+    border-color: var(--hover-link);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
