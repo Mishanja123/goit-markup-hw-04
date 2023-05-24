@@ -387,6 +387,12 @@ gap: var(--indent);
     gap: var(--indent);
     row-gap: 48px;
 }
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    /* width: 360px;
+    height: 300px; */
+}
 
 .portfolio-item:hover,
 .portfolio-item:focus {
@@ -402,6 +408,10 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     border: 1px solid var(--accent-color);
     border-top: none;
 }
+
+/* Portfolio overlay*/
+
+
 
 
 
